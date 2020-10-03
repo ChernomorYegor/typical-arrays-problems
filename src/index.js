@@ -1,5 +1,9 @@
 exports.min = function min (array) {
-  return 0;
+  if (array && array.length) {
+    return Math.min.apply(null, array);
+  } else {
+    return 0;
+  }
 }
 
 exports.max = function max (array) {
